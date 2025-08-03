@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Components - Hackathon Winner</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Glassmorphic Navigation -->
+    <nav class="nav-glass" id="main-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-cube nav-icon"></i>
+                <span class="nav-title">Premium UI</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active" data-page="home">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#buttons" class="nav-link" data-page="buttons">
+                    <i class="fas fa-square"></i>
+                    <span>Buttons</span>
+                </a>
+                <a href="#cards" class="nav-link" data-page="cards">
+                    <i class="fas fa-id-card"></i>
+                    <span>Cards</span>
+                </a>
+                <a href="#navbars" class="nav-link" data-page="navbars">
+                    <i class="fas fa-bars"></i>
+                    <span>Navbars</span>
+                </a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Page -->
+        <section class="page active" id="home-page">
+            <div class="hero-section">
+                <div class="hero-background">
+                    <div class="floating-elements">
+                        <div class="floating-circle"></div>
+                        <div class="floating-circle"></div>
+                        <div class="floating-circle"></div>
+                    </div>
+                </div>
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Premium</span>
+                        <span class="glitch-text" data-text="Components">Components</span>
+                    </h1>
+                    <p class="hero-description">The most advanced component library with cutting-edge animations, glassmorphism effects, and premium UI patterns.</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">Components</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Responsive</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">∞</span>
+                            <span class="stat-label">Animations</span>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <button class="btn-primary-hero" data-page="buttons">
+                            <span>Explore Components</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <button class="btn-secondary-hero">
+                            <i class="fab fa-github"></i>
+                            <span>View Source</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Advanced Animations</h3>
+                    <p>GSAP-level smooth animations with micro-interactions and premium effects</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Glassmorphism</h3>
+                    <p>Modern frosted glass effects with progressive blur and depth</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive Excellence</h3>
+                    <p>Mobile-first design with seamless breakpoints and touch interactions</p>
+                </div>
+            </div>
+        </section>
+
+      
+
+
+    <!-- Copy Modal -->
+    <div class="modal hidden" id="copy-modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Component Code</h3>
+                <button class="modal-close" id="modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="code-tabs">
+                    <button class="code-tab active" data-tab="html">HTML</button>
+                    <button class="code-tab" data-tab="css">CSS</button>
+                </div>
+                <div class="code-content">
+                    <pre class="code-block active" id="html-code"><code></code></pre>
+                    <pre class="code-block" id="css-code"><code></code></pre>
+                </div>
+                <button class="copy-code-btn" id="copy-code">
+                    <i class="fas fa-copy"></i>
+                    <span>Copy Code</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Animation -->
+    <div class="loading-overlay" id="loading">
+        <div class="loading-spinner">
+            <div class="spinner-ring"></div>
+            <div class="spinner-ring"></div>
+            <div class="spinner-ring"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
